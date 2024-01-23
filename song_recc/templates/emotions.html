@@ -1,0 +1,295 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Emotion Detection</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Yoga Lite Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="../static/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+
+<body>
+    <!-- //header -->
+    <header class="py-sm-3 pt-3 pb-2" id="home">
+        <div class="container">
+            <!-- nav -->
+            <div class="top d-md-flex">
+                <div id="logo">
+                    <h1> <a href="/user_index/{{current_user.id}}">Emotion Detection</a></h1>
+                </div>
+                <div class="search-form mx-md-auto">
+                    <div class="form-w3layouts-grid">
+                        <!-- <form action="#" method="post" class="newsletter">
+                            <input class="search" type="search" placeholder="Search..." required="">
+                            <button class="form-control btn" value=""><span class="fa fa-search"></span></button>
+                        </form> -->
+                    </div>
+                </div>
+                <!-- <div class="forms mt-md-0 mt-2">
+                    <a href="/login" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
+                    <a href="/register" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
+                </div> -->
+            </div>
+            <nav class="text-center">
+                <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                <input type="checkbox" id="drop" />
+                <ul class="menu">
+                    <li class="active"><a href="/user_index/{{current_user.id}}">Home</a></li>
+                    <li><a href="/emotion_detection">Emotion Detection</a></li>
+                    <li><a href="/chatbot">Chatbot</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                    <!-- <li> -->
+                        <!-- First Tier Drop Down -->
+                        <!-- <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
+                        </label>
+                        <a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                        <input type="checkbox" id="drop-2" />
+                        <ul>
+                            <li><a href="services.html" class="drop-text">Services</a></li>
+                            <li><a href="#stats" class="drop-text">Statistics</a></li>
+                            <li><a href="#test" class="drop-text">Reviews</a></li>
+                            <li><a href="single.html" class="drop-text">More Info</a></li>
+
+                        </ul>
+                    </li> -->
+<!-- 
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </nav>
+            <!-- //nav -->
+        </div>
+    </header>
+<br><br>
+
+
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container" style="margin-left:350px; margin-top:50px;">
+	<div class="row">
+		<h2></h2>
+	</div>
+    
+    <div class="row">
+    
+    <div class="col-md-6">       <!-- Standard button -->
+<a href="/neutral"><button type="button" class="btn btn-default ribbon">Neutral</button></a>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<a href="/happy"><button type="button" class="btn btn-primary ribbon">Joy</button></a>
+
+<!-- Indicates a successful or positive action -->
+<a href="/happy"><button type="button" class="btn btn-success ribbon">Love</button></a>
+
+<!-- Contextual button for informational alert messages -->
+<a href="/surprise"><button type="button" class="btn btn-info ribbon">Surprise</button></a>
+
+<!-- Indicates caution should be taken with this action -->
+<a href="/fear"><button type="button" class="btn btn-warning ribbon">Fear</button></a>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<a href="/angry"><button type="button" class="btn btn-danger ribbon">Angry</button></a>
+    <a href="/sad"><button type="button" class="btn btn-info ribbon">Sadness</button></a>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+</div>
+
+
+
+    
+ 
+    </div>
+    
+    
+</div>
+
+<br><br><br>
+<style>
+
+
+/*Remove that CSS*/
+.col-md-3 {
+    margin-left:5%;
+    }
+/*Remove that CSS*/
+
+
+
+button {
+  margin: 20px 0;
+  line-height: 34px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  outline:none !important;
+  width:100%;
+}
+
+button:active {
+
+  outline:none;
+}
+
+button.ribbon {
+  
+  outline:none;
+  outline-color: transparent;
+}
+button.ribbon:before, button.ribbon:after {
+  top: 5px;
+  z-index: -10;
+}
+button.ribbon:before {
+  border-color: #53dab6 #53dab6 #53dab6 transparent;
+  left: -25px;
+  border-width: 17px;
+}
+button.ribbon:after {
+  border-color: #53dab6 transparent #53dab6 #53dab6;
+  right: -25px;
+  border-width: 17px;
+}
+
+button:before, button:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0;
+  outline:none;
+}
+
+button.btn-default:before {
+  border-color: #757575 #757575 #757575 transparent;
+    }
+    button.btn-default:after {
+  border-color: #757575 transparent #757575 #757575;
+    }
+    
+    
+    
+    button.btn-primary:before {
+  border-color: #2e6da4 #2e6da4 #2e6da4 transparent;
+    }
+    button.btn-primary:after {
+  border-color: #2e6da4 transparent #2e6da4 #2e6da4;
+    }
+    
+    
+    button.btn-success:before {
+  border-color: #398439 #398439 #398439 transparent;
+    }
+    button.btn-success:after {
+  border-color: #398439 transparent #398439 #398439;
+    }
+    
+    
+    button.btn-info:before {
+  border-color: #269abc #269abc #269abc transparent;
+    }
+    button.btn-info:after {
+  border-color: #269abc transparent #269abc #269abc;
+    }
+    
+    
+    button.btn-warning:before {
+  border-color: #d58512 #d58512 #d58512 transparent;
+    }
+    button.btn-warning:after {
+  border-color: #d58512 transparent #d58512 #d58512;
+    }
+    
+    
+    button.btn-danger:before {
+  border-color: #ac2925 #ac2925 #ac2925 transparent;
+    }
+    button.btn-danger:after {
+  border-color: #ac2925 transparent #ac2925 #ac2925;
+    }
+    
+    
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="copy-right py-2">
+        <div class="container-fluid inner-sec-w3ls">
+            <div class="row">
+                <div class="col-lg-6 copy-w3pvt">
+                    <p class="copy-right-grids text-li text-left my-sm-4 my-4">© 2022 Emotion Detection. All Rights Reserved | Design by
+                        <a href=""> Emotion Detection </a>
+                    </p>
+                </div>
+                <!-- <div class="col-lg-5 w3layouts-footer text-right">
+                    <ul class="social_section_1info">
+                        <li class="mb-2 facebook"><a href="#"><span class="fa fa-facebook"></span> facebook</a></li>
+                        <li class="mb-2 twitter"><a href="#"><span class="fa fa-twitter"></span> twitter</a></li>
+                        <li class="google"><a href="#"><span class="fa fa-google-plus"></span> google</a></li>
+                        <li class="linkedin"><a href="#"><span class="fa fa-linkedin"></span> linkedin</a></li>
+                    </ul>
+                </div> -->
+                <!-- <div class="move-top col-1"><a href="#home" class="move-top"> <span class="fa fa-angle-up" aria-hidden="true"></span></a></div>
+            </div> -->
+            <!-- //footer bottom -->
+        </div>
+    </div>
+
+</body>
+
+</html>
